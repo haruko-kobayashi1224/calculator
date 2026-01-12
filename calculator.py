@@ -13,9 +13,7 @@ while answer != "n":
 
     num2 = float(input("2つ目の数値を入力してください: "))
     
-   
-    if sign != "+" and sign != "-" and sign != "*" and sign != "/":
-      raise SignInvalidError("演算子を入力してください")    
+  
     if sign == "+":
       print("結果:" + str(num1) + "+" + str(num2) + "=" + str(num1+num2))
     elif sign == "-":
@@ -24,6 +22,7 @@ while answer != "n":
       print("結果:" + str(num1) + "*" + str(num2) + "=" + str(num1*num2))
     elif  sign == "/": 
       print("結果:" + str(num1) + "/" + str(num2) + "=" + str(num1/num2))
+    else: raise SignInvalidError("演算子を入力してください") 
     
     answer = input("計算を続けますか？(y/n)") 
     
