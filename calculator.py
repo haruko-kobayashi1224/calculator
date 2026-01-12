@@ -13,16 +13,12 @@ while answer != "n":
     
         
     if sign == "+":
-      print( num1 + num2 ) 
       print("結果:" + str(num1) + "+" + str(num2) + "=" + str(num1+num2))
     elif sign == "-":
-      print( num1 - num2 )
       print("結果:" + str(num1) + "-" + str(num2) + "=" + str(num1-num2))
     elif sign == "*":
-      print( num1 * num2 )
       print("結果:" + str(num1) + "*" + str(num2) + "=" + str(num1*num2))
-    elif  sign == "/":
-      print( num1 / num2 ) 
+    elif  sign == "/": 
       print("結果:" + str(num1) + "/" + str(num2) + "=" + str(num1/num2))
       
     answer = input("計算を続けますか？(y/n)") 
