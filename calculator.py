@@ -30,6 +30,8 @@ while answer != "n":
     print("数字を入力してください")    
   except SignInvalidError as e:
     print(e)
+  except Exception as e:
+     print("予期せぬ例外が発生しました")    
   finally:  
     answer = input("計算を続けますか？(y/n)")      
                        
